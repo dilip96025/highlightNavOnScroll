@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* { margin: 0; box-sizing: border-box; padding: 0; outline: none; }
+
+body { font-size: 15px; font-family: 'Open Sans', sans-serif; }
+
+.wrapper { display: flex; flex-direction: column; height: 100vh; width: 100vw; }
+.header { height: 50px; display: flex; align-items: center; justify-content: center; background-color: #f2f2f2; flex-shrink: 0; } 
+.section { overflow: auto; scroll-behavior: smooth; }
+
+.nav ul { display: flex; gap: 40px; } 
+.nav li { list-style: none; padding: 5px 10px; border-radius: 4px; } 
+.nav a { text-decoration: none; color: #666; font-size: 18px; } 
+.nav li:hover, .nav li.active { background-color: rgba(122, 83, 209,0.8); } 
+.nav li:hover a, .nav li.active a { color: #fff; }
+
+.article { height: calc(100vh - 50px); padding: 40px; }
+.article h1 { font-size: 30px; }
+.article p { margin-top: 16px; font-size: 18px; line-height: 26px; word-spacing: 2px; }
+.article:nth-child(1) { background-color: #fff; }
+.article:nth-child(2) { background-color: #ff9; }
+.article:nth-child(3) { background-color: #f9f; }
+.article:nth-child(4) { background-color: #9ff; }
